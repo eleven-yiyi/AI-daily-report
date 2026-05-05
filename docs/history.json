@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月05日",
+    "slug": "2026-05-05",
+    "filename": "ribao_2026-05-05.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Musk v. Altman庭审首周：马斯克称被欺骗，承认xAI蒸馏OpenAI模型",
+      "Salesforce发布Agentforce Operations，专治企业AI工作流断裂",
+      "Five Eyes联合发布警示：激进部署具身AI风险极高"
+    ]
+  },
+  {
     "date": "2026年05月04日",
     "slug": "2026-05-04",
     "filename": "ribao_2026-05-04.html",
