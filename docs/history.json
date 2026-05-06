@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月06日",
+    "slug": "2026-05-06",
+    "filename": "ribao_2026-05-06.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Subquadratic 宣称突破大模型计算复杂度瓶颈，实现千倍效率提升",
+      "Musk v. Altman 审判首周引爆AI治理核心争议",
+      "OpenAI发布GPT-5.5 Instant并开放Codex限免，强化开发者生态"
+    ]
+  },
+  {
     "date": "2026年05月05日",
     "slug": "2026-05-05",
     "filename": "ribao_2026-05-05.html",
