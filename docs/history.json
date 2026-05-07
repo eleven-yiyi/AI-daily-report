@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月07日",
+    "slug": "2026-05-07",
+    "filename": "ribao_2026-05-07.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Hugging Face发布机器人应用商店Reachy Mini，上线200+开源AI应用",
+      "Musk v. Altman庭审首周引爆AI治理争议：信任失效、模型蒸馏与生存风险警告",
+      "Subquadratic宣称突破Transformer复杂度瓶颈，推出SubQ模型并称效率提升1000倍"
+    ]
+  },
+  {
     "date": "2026年05月06日",
     "slug": "2026-05-06",
     "filename": "ribao_2026-05-06.html",
