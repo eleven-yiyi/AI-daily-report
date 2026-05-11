@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月11日",
+    "slug": "2026-05-11",
+    "filename": "ribao_2026-05-11.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic称年化营收达300亿美元，实现80倍惊人增长",
+      "Cloudflare因AI提效裁撤1100岗位，创公司史上首次大规模裁员",
+      "OpenAI推出GPT-5级实时语音推理能力，重塑语音代理架构"
+    ]
+  },
+  {
     "date": "2026年05月10日",
     "slug": "2026-05-10",
     "filename": "ribao_2026-05-10.html",
