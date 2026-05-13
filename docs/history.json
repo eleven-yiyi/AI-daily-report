@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月13日",
+    "slug": "2026-05-13",
+    "filename": "ribao_2026-05-13.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Shai-Hulud蠕虫爆发：172个npm/PyPI包遭投毒，企业开发环境或已沦陷",
+      "Google与SpaceX密谈在轨数据中心，AI算力或向近地轨道迁移",
+      "Musk诉Altman案关键证词曝光：马斯克曾拟将OpenAI交予子女掌管"
+    ]
+  },
+  {
     "date": "2026年05月12日",
     "slug": "2026-05-12",
     "filename": "ribao_2026-05-12.html",
