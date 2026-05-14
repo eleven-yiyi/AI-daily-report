@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月14日",
+    "slug": "2026-05-14",
+    "filename": "ribao_2026-05-14.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "AI IQ上线：首个将前沿大模型映射至人类IQ量表的评估平台",
+      "Anthropic首次在企业端超越OpenAI：34.4%美企付费使用Claude",
+      "前沿AI模型会‘改写’而非仅‘删除’文档内容，错误极难察觉"
+    ]
+  },
+  {
     "date": "2026年05月13日",
     "slug": "2026-05-13",
     "filename": "ribao_2026-05-13.html",
