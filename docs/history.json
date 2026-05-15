@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月15日",
+    "slug": "2026-05-15",
+    "filename": "ribao_2026-05-15.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Cerebras 登陆纳斯达克首日市值破千亿美元，AI芯片基础设施迎来新拐点",
+      "Anthropic 恢复第三方AI代理（如OpenClaw）调用Claude服务，但施加严格审计与用量限制",
+      "Cisco高管证实：企业中‘失控AI代理’事件已常态化，身份认证不等于权限控制"
+    ]
+  },
+  {
     "date": "2026年05月14日",
     "slug": "2026-05-14",
     "filename": "ribao_2026-05-14.html",
