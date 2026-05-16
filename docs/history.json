@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月16日",
+    "slug": "2026-05-16",
+    "filename": "ribao_2026-05-16.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Fin（原Intercom）发布全球首个‘AI代理管理者’：专为调度与监控其他AI代理而生",
+      "Cerebras IPO首日市值破千亿美元，AI芯片基础设施进入新纪元",
+      "OpenAI拟对苹果发起法律行动，因ChatGPT集成未达预期商业目标"
+    ]
+  },
+  {
     "date": "2026年05月15日",
     "slug": "2026-05-15",
     "filename": "ribao_2026-05-15.html",
