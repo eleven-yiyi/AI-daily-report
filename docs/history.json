@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月19日",
+    "slug": "2026-05-19",
+    "filename": "ribao_2026-05-19.html",
+    "news_count": 3,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "马斯克诉OpenAI案终审落败：陪审团一致裁定起诉超时效",
+      "四起AI供应链攻击50天内集中爆发，暴露发布流程安全盲区",
+      "ArXiv新规：禁止AI代写整篇论文，违规者禁发一年"
+    ]
+  },
+  {
     "date": "2026年05月18日",
     "slug": "2026-05-18",
     "filename": "ribao_2026-05-18.html",
