@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月20日",
+    "slug": "2026-05-20",
+    "filename": "ribao_2026-05-20.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Google 发布 Gemini 3.5 Flash：企业级 AI 成本可年降超 10 亿美元",
+      "Musk v. Altman 案终审落锤：陪审团一致裁定诉讼超时效，OpenAI 全胜",
+      "Google 重构搜索框：25 年首次重大改版，全面转向 AI 原生交互"
+    ]
+  },
+  {
     "date": "2026年05月19日",
     "slug": "2026-05-19",
     "filename": "ribao_2026-05-19.html",
