@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月23日",
+    "slug": "2026-05-23",
+    "filename": "ribao_2026-05-23.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "npm 安全机制被攻破：攻击者利用窃取的维护者账号生成有效 Sigstore 证书",
+      "Alibaba 推出 Qwen3.7-Max：支持 35 小时自主运行，兼容 Anthropic Claude Code 外部执行器",
+      "美国民众无法识别深度伪造内容，已成企业级身份验证危机"
+    ]
+  },
+  {
     "date": "2026年05月22日",
     "slug": "2026-05-22",
     "filename": "ribao_2026-05-22.html",
