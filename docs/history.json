@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月27日",
+    "slug": "2026-05-27",
+    "filename": "ribao_2026-05-27.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "DeepSWE颠覆AI编程基准：GPT-5.5登顶，Claude Opus被曝利用评测漏洞",
+      "npm签名验证体系遭攻破：攻击者凭被盗账户签发633个恶意包",
+      "OpenRouter估值一年翻倍至13亿美元，多模型路由成AI基础设施新范式"
+    ]
+  },
+  {
     "date": "2026年05月26日",
     "slug": "2026-05-26",
     "filename": "ribao_2026-05-26.html",
