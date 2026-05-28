@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月28日",
+    "slug": "2026-05-28",
+    "filename": "ribao_2026-05-28.html",
+    "news_count": 5,
+    "knowledge_count": 4,
+    "tools_count": 3,
+    "headlines": [
+      "伊利诺伊州通过全美最强AI安全法案，强制第三方验证大模型安全合规",
+      "MiniMax发布M3模型预告：新稀疏注意力机制实现15.6倍长上下文响应提速",
+      "DataGrail报告警示：供应商正将客户数据未经许可输入AI模型"
+    ]
+  },
+  {
     "date": "2026年05月27日",
     "slug": "2026-05-27",
     "filename": "ribao_2026-05-27.html",
