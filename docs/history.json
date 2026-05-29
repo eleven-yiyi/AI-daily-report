@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月29日",
+    "slug": "2026-05-29",
+    "filename": "ribao_2026-05-29.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic 宣布 Claude Opus 4.8 正式发布，估值逼近 1 万亿美元",
+      "Mistral AI 发布 Vibe 助手并进军工业 AI，筹建巴黎南部推理数据中心",
+      "伊利诺伊州通过全美最严 AI 安全法案，要求第三方强制审计"
+    ]
+  },
+  {
     "date": "2026年05月28日",
     "slug": "2026-05-28",
     "filename": "ribao_2026-05-28.html",
