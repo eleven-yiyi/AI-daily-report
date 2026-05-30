@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月30日",
+    "slug": "2026-05-30",
+    "filename": "ribao_2026-05-30.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic完成650亿美元融资，估值逼近1万亿美元，IPO在即",
+      "伊利诺伊州通过全美最强AI安全法案，强制第三方审计",
+      "ITBench-AA首测：前沿模型在企业级IT任务中得分低于50%"
+    ]
+  },
+  {
     "date": "2026年05月29日",
     "slug": "2026-05-29",
     "filename": "ribao_2026-05-29.html",
