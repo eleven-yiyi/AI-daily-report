@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年05月31日",
+    "slug": "2026-05-31",
+    "filename": "ribao_2026-05-31.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Mistral AI发布Vibe并进军工业AI，宣布在巴黎南部建设推理数据中心",
+      "伊利诺伊州通过全美最强AI安全法案，强制第三方审计",
+      "Pinterest砍掉Qwen3-VL视觉层，成本降90%、准确率升30%"
+    ]
+  },
+  {
     "date": "2026年05月30日",
     "slug": "2026-05-30",
     "filename": "ribao_2026-05-30.html",
