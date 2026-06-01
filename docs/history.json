@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月01日",
+    "slug": "2026-06-01",
+    "filename": "ribao_2026-06-01.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Claude Mythos揭示企业补丁流程严重滞后：GPT-4可自主利用87%单日漏洞",
+      "Mistral AI发布Vibe并进军工业AI，宣布建设巴黎南部AI数据中心挑战OpenAI",
+      "伊利诺伊州通过全美最强AI安全法案，强制大模型厂商接受第三方安全审计"
+    ]
+  },
+  {
     "date": "2026年05月31日",
     "slug": "2026-05-31",
     "filename": "ribao_2026-05-31.html",
