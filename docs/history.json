@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月03日",
+    "slug": "2026-06-03",
+    "filename": "ribao_2026-06-03.html",
+    "news_count": 5,
+    "knowledge_count": 4,
+    "tools_count": 4,
+    "headlines": [
+      "微软发布MXC：首个OS级AI代理沙箱，OpenAI与英伟达已加入",
+      "Perplexity发布混合本地-云推理系统，实现任务中实时负载调度",
+      "Anthropic秘密提交IPO文件，或成史上最大AI公司上市案"
+    ]
+  },
+  {
     "date": "2026年06月02日",
     "slug": "2026-06-02",
     "filename": "ribao_2026-06-02.html",
