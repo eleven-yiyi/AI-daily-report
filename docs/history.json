@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月04日",
+    "slug": "2026-06-04",
+    "filename": "ribao_2026-06-04.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Google发布开源多模态模型Gemma 4 12B，支持音视频理解且可全本地运行",
+      "微软发布Surface RTX Spark Dev Box：首款面向开发者的AI PC工作站",
+      "微软推出MXC：首个OS级AI代理沙箱，OpenAI与NVIDIA已接入"
+    ]
+  },
+  {
     "date": "2026年06月03日",
     "slug": "2026-06-03",
     "filename": "ribao_2026-06-03.html",
