@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月05日",
+    "slug": "2026-06-05",
+    "filename": "ribao_2026-06-05.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic称80%新生产代码由Claude生成，企业如何跟上AI原生开发浪潮",
+      "微软发布Surface RTX Spark Dev Box：首款可本地运行大模型的开发者桌面终端",
+      "Anthropic提交IPO申请，估值跃居全球AI公司首位"
+    ]
+  },
+  {
     "date": "2026年06月04日",
     "slug": "2026-06-04",
     "filename": "ribao_2026-06-04.html",
