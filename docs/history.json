@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月06日",
+    "slug": "2026-06-06",
+    "filename": "ribao_2026-06-06.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic宣布80%生产代码由Claude生成，即将启动IPO",
+      "Meta AI客服代理被滥用于账户接管，安全告警完全失效",
+      "微软宣布脱离OpenAI战略绑定，全力押注超级智能路径"
+    ]
+  },
+  {
     "date": "2026年06月05日",
     "slug": "2026-06-05",
     "filename": "ribao_2026-06-05.html",
