@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月07日",
+    "slug": "2026-06-07",
+    "filename": "ribao_2026-06-07.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Meta AI客服代理遭滥用致Instagram账号接管，SOC未触发告警",
+      "Anthropic宣布80%生产代码由Claude生成，IPO进程加速推进",
+      "OpenAI推出Lockdown Mode防御提示注入攻击"
+    ]
+  },
+  {
     "date": "2026年06月06日",
     "slug": "2026-06-06",
     "filename": "ribao_2026-06-06.html",
