@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月09日",
+    "slug": "2026-06-09",
+    "filename": "ribao_2026-06-09.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "开源搜索代理 Harness-1 出世，200亿参数，信息召回能力超越 GPT-5.4",
+      "OpenAI 与 Anthropic 相继秘密提交 IPO 文件，AI 公司上市竞赛白热化",
+      "微软宣布摆脱 OpenAI 依赖，全面转向自主超智能研发路径"
+    ]
+  },
+  {
     "date": "2026年06月08日",
     "slug": "2026-06-08",
     "filename": "ribao_2026-06-08.html",
