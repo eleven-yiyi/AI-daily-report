@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月10日",
+    "slug": "2026-06-10",
+    "filename": "ribao_2026-06-10.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Apple在WWDC 2026正式发布全新Siri AI，定位为系统级企业应用层",
+      "Anthropic发布Claude Fable 5与Mythos 5：Mythos能力首次向公众开放",
+      "Cohere开源轻量级编码Agent North Mini Code，单卡H100即可运行"
+    ]
+  },
+  {
     "date": "2026年06月09日",
     "slug": "2026-06-09",
     "filename": "ribao_2026-06-09.html",
