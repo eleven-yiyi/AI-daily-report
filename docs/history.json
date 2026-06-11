@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月11日",
+    "slug": "2026-06-11",
+    "filename": "ribao_2026-06-11.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "GPT-5.5 在全新代理基准 ALE 中意外击败 Claude Fable 5",
+      "Anthropic CEO 呼吁建立类 FAA 的 AI 模型监管框架",
+      "OpenAI 秘密提交 IPO 申请，紧随 Anthropic 步伐"
+    ]
+  },
+  {
     "date": "2026年06月10日",
     "slug": "2026-06-10",
     "filename": "ribao_2026-06-10.html",
