@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月12日",
+    "slug": "2026-06-12",
+    "filename": "ribao_2026-06-12.html",
+    "news_count": 5,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "微软开源 SkillOpt：无需修改模型权重即可自动升级 AI Agent 技能",
+      "小米开源 MiMo Code：在超长程（200+步）编码任务中超越 Claude Code",
+      "上下文压缩技术实现实用化：输入长度缩减 16 倍且无精度损失"
+    ]
+  },
+  {
     "date": "2026年06月11日",
     "slug": "2026-06-11",
     "filename": "ribao_2026-06-11.html",
