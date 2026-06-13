@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月13日",
+    "slug": "2026-06-13",
+    "filename": "ribao_2026-06-13.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Google 提出‘可信不确定性’机制，让大模型主动承认未知而非幻觉",
+      "Xiaomi 开源 MiMo Code：终端原生编码助手，在200+步长任务中超越 Claude Code",
+      "Google DeepMind 警示：百万级AI代理在线互操作或引发不可控涌现风险"
+    ]
+  },
+  {
     "date": "2026年06月12日",
     "slug": "2026-06-12",
     "filename": "ribao_2026-06-12.html",
