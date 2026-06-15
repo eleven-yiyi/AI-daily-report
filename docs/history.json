@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月15日",
+    "slug": "2026-06-15",
+    "filename": "ribao_2026-06-15.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "美国政府勒令Anthropic下架Claude Fable 5与Mythos 5，全球访问即时终止",
+      "Google提出‘可信不确定性’机制，让LLM主动承认未知而非幻觉",
+      "PixelRAG颠覆传统RAG流程：直接解析像素级文档，准确率提升且Token成本降10倍"
+    ]
+  },
+  {
     "date": "2026年06月14日",
     "slug": "2026-06-14",
     "filename": "ribao_2026-06-14.html",
