@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月16日",
+    "slug": "2026-06-16",
+    "filename": "ribao_2026-06-16.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "纳德拉警告：AI可能掏空整个行业，重演全球化冲击",
+      "Anthropic遭美政府紧急禁令：Fable 5与Mythos 5全球停服",
+      "DeepMind警示：百万级AI代理在线互操作或引发系统性风险"
+    ]
+  },
+  {
     "date": "2026年06月15日",
     "slug": "2026-06-15",
     "filename": "ribao_2026-06-15.html",
