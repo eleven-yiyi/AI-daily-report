@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月17日",
+    "slug": "2026-06-17",
+    "filename": "ribao_2026-06-17.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "微博发布VibeThinker-3B：3B参数小模型在多项基准上挑战大模型权威",
+      "Z.ai开源GLM-5.2：7530亿参数模型在长周期编程任务中性能超GPT-5.5",
+      "Satya Nadella警示AI或将‘掏空’整个产业，类比全球化冲击"
+    ]
+  },
+  {
     "date": "2026年06月16日",
     "slug": "2026-06-16",
     "filename": "ribao_2026-06-16.html",
