@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月18日",
+    "slug": "2026-06-18",
+    "filename": "ribao_2026-06-18.html",
+    "news_count": 5,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "AWS 推出自学习图谱架构，进军企业级上下文层赛道",
+      "Anthropic 宣布 Claude Design 重大升级，修复高Token消耗问题",
+      "Weibo发布VibeThinker-3B小模型，引发AI基准测试可信度争议"
+    ]
+  },
+  {
     "date": "2026年06月17日",
     "slug": "2026-06-17",
     "filename": "ribao_2026-06-17.html",
