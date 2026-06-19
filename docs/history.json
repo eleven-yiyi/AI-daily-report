@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月19日",
+    "slug": "2026-06-19",
+    "filename": "ribao_2026-06-19.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic 推出 Claude Design 重大升级，修复‘令牌燃烧’问题并支持设计系统导入",
+      "Weibo 发布 VibeThinker-3B 小模型，引发AI社区对基准测试可信度的再审视",
+      "Anthropic 被美政府要求下架 Mythos/Fable 系列模型，出口管制与‘不可 jailbreak’要求引技术争议"
+    ]
+  },
+  {
     "date": "2026年06月18日",
     "slug": "2026-06-18",
     "filename": "ribao_2026-06-18.html",
