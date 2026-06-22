@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月22日",
+    "slug": "2026-06-22",
+    "filename": "ribao_2026-06-22.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "7000台Langflow服务器遭攻击，LangGraph与LangChain存在相同安全漏洞",
+      "美国政府强制下架Anthropic最新模型Fable 5与Mythos 5",
+      "Subquadratic宣称突破LLM数学瓶颈，引发学界质疑与关注"
+    ]
+  },
+  {
     "date": "2026年06月21日",
     "slug": "2026-06-21",
     "filename": "ribao_2026-06-21.html",
