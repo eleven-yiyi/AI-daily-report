@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月23日",
+    "slug": "2026-06-23",
+    "filename": "ribao_2026-06-23.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Sakana发布Fugu多模型自动合成系统，实现前沿级AI性能",
+      "研究者推出Self-Harness框架：AI智能体可自主重写规则，性能提升达60%",
+      "AI遭遇‘上下文墙’：GPU算力不再是瓶颈，持久化上下文管理成新挑战"
+    ]
+  },
+  {
     "date": "2026年06月22日",
     "slug": "2026-06-22",
     "filename": "ribao_2026-06-22.html",
