@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月24日",
+    "slug": "2026-06-24",
+    "filename": "ribao_2026-06-24.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic 推出 Claude Tag：Slack 中永久驻留的自主 AI 同事",
+      "OpenAI 启动‘补天计划’：用 AI 自动修复开源软件漏洞",
+      "Sakana 发布 Fugu 系统：多模型自动合成架构实现前沿性能"
+    ]
+  },
+  {
     "date": "2026年06月23日",
     "slug": "2026-06-23",
     "filename": "ribao_2026-06-23.html",
