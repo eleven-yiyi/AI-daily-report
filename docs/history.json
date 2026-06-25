@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月25日",
+    "slug": "2026-06-25",
+    "filename": "ribao_2026-06-25.html",
+    "news_count": 5,
+    "knowledge_count": 4,
+    "tools_count": 4,
+    "headlines": [
+      "Mindstone 推出 Rebel：首个支持模型自动任务匹配的企业级 AI 代理编排平台",
+      "Mistral 发布 OCR 4：文档智能新范式，支持结构化语义理解",
+      "阿里巴巴 Qwen-AgentWorld：不训练为代理，却提升七类代理任务性能"
+    ]
+  },
+  {
     "date": "2026年06月24日",
     "slug": "2026-06-24",
     "filename": "ribao_2026-06-24.html",
