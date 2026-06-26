@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月26日",
+    "slug": "2026-06-26",
+    "filename": "ribao_2026-06-26.html",
+    "news_count": 5,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Liquid AI发布最小语言模型LFM2.5-230M，性能超越4倍参数量模型",
+      "Mistral发布OCR 4：从文本抽取迈向结构化文档智能",
+      "Alibaba推出Qwen-AgentWorld：不训练于代理环境却提升七类任务表现"
+    ]
+  },
+  {
     "date": "2026年06月25日",
     "slug": "2026-06-25",
     "filename": "ribao_2026-06-25.html",
