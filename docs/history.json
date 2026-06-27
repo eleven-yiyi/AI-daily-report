@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月27日",
+    "slug": "2026-06-27",
+    "filename": "ribao_2026-06-27.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI 限推 GPT-5.6：Sol/Terra/Luna 三模型仅向政府授权伙伴开放",
+      "Anthropic Mythos 5 获特朗普政府批准，超百家美企及机构获准使用",
+      "Liquid AI 发布最小语言模型 LFM2.5-230M，230M参数性能超920M模型"
+    ]
+  },
+  {
     "date": "2026年06月26日",
     "slug": "2026-06-26",
     "filename": "ribao_2026-06-26.html",
