@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月28日",
+    "slug": "2026-06-28",
+    "filename": "ribao_2026-06-28.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI发布GPT-5.6三模型家族，但受美政府限制仅限预览伙伴使用",
+      "Anthropic获准向超100家美企及机构开放Mythos 5，出口禁令部分解除",
+      "IBM发布亚纳米级芯片原型，晶体管密度达1000亿/平方厘米"
+    ]
+  },
+  {
     "date": "2026年06月27日",
     "slug": "2026-06-27",
     "filename": "ribao_2026-06-27.html",
