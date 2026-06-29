@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月29日",
+    "slug": "2026-06-29",
+    "filename": "ribao_2026-06-29.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI 限制 GPT-5.6 推出：美政府以安全为由要求限批预览",
+      "Anthropic Mythos 解禁：超百美企及政府机构获准使用",
+      "Liquid AI 发布超轻量级模型 LFM2.5-230M，数据提取性能超4倍参数竞品"
+    ]
+  },
+  {
     "date": "2026年06月28日",
     "slug": "2026-06-28",
     "filename": "ribao_2026-06-28.html",
