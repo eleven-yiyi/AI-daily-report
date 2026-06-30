@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年06月30日",
+    "slug": "2026-06-30",
+    "filename": "ribao_2026-06-30.html",
+    "news_count": 5,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "DeepSeek 开源 DSpark 框架，最高提升大模型推理速度 85%",
+      "Claude Code 被通过 Sentry 漏洞劫持，Datadog/Jira 等存在同类风险",
+      "OpenAI 发布 GPT-5.6 三模型家族（Sol/Terra/Luna），但仅限美政府批准的预览伙伴"
+    ]
+  },
+  {
     "date": "2026年06月29日",
     "slug": "2026-06-29",
     "filename": "ribao_2026-06-29.html",
