@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月01日",
+    "slug": "2026-07-01",
+    "filename": "ribao_2026-07-01.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "摩根士丹利将高风险P&L对账工作减半：通过降低AI代理自主性实现稳健落地",
+      "Anthropic发布Claude Science：面向科研人员的AI工作台，非新模型而是端到端工作流",
+      "谷歌发布Nano Banana 2 Lite（Gemini 3.1 Flash-Lite）：4秒生成、低成本企业级图像模型"
+    ]
+  },
+  {
     "date": "2026年06月30日",
     "slug": "2026-06-30",
     "filename": "ribao_2026-06-30.html",
