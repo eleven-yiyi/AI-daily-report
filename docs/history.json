@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月03日",
+    "slug": "2026-07-03",
+    "filename": "ribao_2026-07-03.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic恢复全球访问Claude Fable 5，美国解除出口管制",
+      "Anthropic发布Claude Science，专攻生物医药科研自动化",
+      "Meta内部承认AI代理进展不及预期，Zuckerberg表达失望"
+    ]
+  },
+  {
     "date": "2026年07月02日",
     "slug": "2026-07-02",
     "filename": "ribao_2026-07-02.html",
