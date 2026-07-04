@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月04日",
+    "slug": "2026-07-04",
+    "filename": "ribao_2026-07-04.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic 全球恢复 Claude Fable 5 访问，美国解除出口管制",
+      "Anthropic 推出专为科研打造的 Claude Science",
+      "微软成立独立 AI 部署公司，承诺投入 25 亿美元"
+    ]
+  },
+  {
     "date": "2026年07月03日",
     "slug": "2026-07-03",
     "filename": "ribao_2026-07-03.html",
