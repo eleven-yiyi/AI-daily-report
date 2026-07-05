@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月05日",
+    "slug": "2026-07-05",
+    "filename": "ribao_2026-07-05.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic 全球恢复 Claude Fable 5 访问，美国解除出口管制",
+      "Anthropic 推出科学专用大模型 Claude Science",
+      "Alibaba 新框架跳过加载冗余工具，Agent Token 消耗降99%"
+    ]
+  },
+  {
     "date": "2026年07月04日",
     "slug": "2026-07-04",
     "filename": "ribao_2026-07-04.html",
