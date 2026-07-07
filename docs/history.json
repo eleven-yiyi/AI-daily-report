@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月07日",
+    "slug": "2026-07-07",
+    "filename": "ribao_2026-07-07.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic 发现 Claude 内部自发形成‘J-lens’结构，与主流意识理论高度吻合",
+      "美国解除对 Anthropic Fable 5 出口管制，但附加新型安全协议",
+      "阿里发布新AI框架：跳过99%工具加载，大幅降低Agent令牌消耗"
+    ]
+  },
+  {
     "date": "2026年07月06日",
     "slug": "2026-07-06",
     "filename": "ribao_2026-07-06.html",
