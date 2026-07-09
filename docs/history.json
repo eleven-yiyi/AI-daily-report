@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月09日",
+    "slug": "2026-07-09",
+    "filename": "ribao_2026-07-09.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "SpaceXAI发布Grok 4.5：首款专为编码与自主智能体训练的Opus级模型",
+      "OpenAI推出GPT-Live：全双工语音交互系统，支持实时对话与翻译",
+      "AI攻击响应窗口坍缩至27秒：企业安全范式转向‘攻前韧性’"
+    ]
+  },
+  {
     "date": "2026年07月08日",
     "slug": "2026-07-08",
     "filename": "ribao_2026-07-08.html",
