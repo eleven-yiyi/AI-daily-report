@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月10日",
+    "slug": "2026-07-10",
+    "filename": "ribao_2026-07-10.html",
+    "news_count": 5,
+    "knowledge_count": 4,
+    "tools_count": 4,
+    "headlines": [
+      "共享API密钥致69%企业AI代理暴露风险",
+      "多模型协同部署使企业误判故障率超2.25倍",
+      "OpenAI发布GPT-Live：全双工语音交互新范式"
+    ]
+  },
+  {
     "date": "2026年07月09日",
     "slug": "2026-07-09",
     "filename": "ribao_2026-07-09.html",
