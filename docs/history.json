@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月11日",
+    "slug": "2026-07-11",
+    "filename": "ribao_2026-07-11.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "57%企业目睹AI代理自信犯错：根源在上下文层缺失",
+      "OpenAI发布ChatGPT Work：首个跨邮箱/Slack/日历的云原生AI工作代理",
+      "86%企业GPU利用率不足50%，AI基建正陷入‘空转繁荣’"
+    ]
+  },
+  {
     "date": "2026年07月10日",
     "slug": "2026-07-10",
     "filename": "ribao_2026-07-10.html",
