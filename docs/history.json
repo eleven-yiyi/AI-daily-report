@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月14日",
+    "slug": "2026-07-14",
+    "filename": "ribao_2026-07-14.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "ACRouter开源框架实现智能模型路由，成本较单一Opus方案降低2.6倍",
+      "Slopsquatting：AI编码助手催生新型软件供应链攻击",
+      "86%企业GPU利用率不足50%，AI基建与治理严重脱节"
+    ]
+  },
+  {
     "date": "2026年07月13日",
     "slug": "2026-07-13",
     "filename": "ribao_2026-07-13.html",
