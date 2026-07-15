@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月15日",
+    "slug": "2026-07-15",
+    "filename": "ribao_2026-07-15.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Anthropic揭示Claude内部推理空间，首次清晰观测大模型‘思考过程’",
+      "OpenAI研究员Miles Wang拟创立20亿美元估值AI药物研发公司",
+      "DeepMind CEO呼吁建立独立前沿AI标准监管机构"
+    ]
+  },
+  {
     "date": "2026年07月14日",
     "slug": "2026-07-14",
     "filename": "ribao_2026-07-14.html",
