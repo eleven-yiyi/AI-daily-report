@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月16日",
+    "slug": "2026-07-16",
+    "filename": "ribao_2026-07-16.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI发布‘超级黑客’模型GPT-Red，用于红队对抗训练提升模型安全性",
+      "Anthropic与Blackstone联合推出Ode：聚焦AI落地的‘嵌入式工程服务’新范式",
+      "Thinking Machines开源多模态大模型Inkling，强调低成本与抗审查特性"
+    ]
+  },
+  {
     "date": "2026年07月15日",
     "slug": "2026-07-15",
     "filename": "ribao_2026-07-15.html",
