@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月17日",
+    "slug": "2026-07-17",
+    "filename": "ribao_2026-07-17.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "月之暗面发布Kimi K3：全球参数量最大的开源大模型（2.8万亿）",
+      "OpenAI推出GPT-Red：专用于红队测试的‘LLM超级黑客’",
+      "Anthropic提交IPO申请，估值近1万亿美元登顶全球AI公司"
+    ]
+  },
+  {
     "date": "2026年07月16日",
     "slug": "2026-07-16",
     "filename": "ribao_2026-07-16.html",
