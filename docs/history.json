@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月18日",
+    "slug": "2026-07-18",
+    "filename": "ribao_2026-07-18.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Moonshot AI发布Kimi K3：全球参数量最大的开源大模型（2.8万亿）",
+      "OpenAI推出GPT-Red：专用于红队测试的LLM超级黑客",
+      "Apple起诉OpenAI窃取商业机密，涉400余名前苹果员工"
+    ]
+  },
+  {
     "date": "2026年07月17日",
     "slug": "2026-07-17",
     "filename": "ribao_2026-07-17.html",
