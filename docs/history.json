@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月20日",
+    "slug": "2026-07-20",
+    "filename": "ribao_2026-07-20.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Moonshot AI发布Kimi K3：全球最大的开源AI模型，参数达2.8万亿",
+      "OpenAI遭苹果发起重磅诉讼，指控窃取商业机密并威胁IPO进程",
+      "Anthropic提交IPO申请，估值近1万亿美元，超越OpenAI成全球最贵AI公司"
+    ]
+  },
+  {
     "date": "2026年07月19日",
     "slug": "2026-07-19",
     "filename": "ribao_2026-07-19.html",
