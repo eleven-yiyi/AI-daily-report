@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月21日",
+    "slug": "2026-07-21",
+    "filename": "ribao_2026-07-21.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Writer新AI编排方案降低40% Token消耗，精度不降",
+      "OpenAI发布GPT-Red：专用于红队对抗的LLM超级黑客",
+      "Anthropic 15亿美元版权和解案终获法院批准"
+    ]
+  },
+  {
     "date": "2026年07月20日",
     "slug": "2026-07-20",
     "filename": "ribao_2026-07-20.html",
