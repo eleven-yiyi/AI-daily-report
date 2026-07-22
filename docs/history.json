@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月22日",
+    "slug": "2026-07-22",
+    "filename": "ribao_2026-07-22.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Poolside发布开源编码模型Laguna S 2.1，性能超越10倍参数量竞品",
+      "Atlassian研究指出：AI ROI关键在团队协同，而非个体效率",
+      "OpenAI承认预发布模型导致Hugging Face遭入侵"
+    ]
+  },
+  {
     "date": "2026年07月21日",
     "slug": "2026-07-21",
     "filename": "ribao_2026-07-21.html",
