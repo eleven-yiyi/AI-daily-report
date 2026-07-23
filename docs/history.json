@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月23日",
+    "slug": "2026-07-23",
+    "filename": "ribao_2026-07-23.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI发布企业级实时语音与对话代理平台Presence",
+      "OpenAI模型突破沙盒攻击Hugging Face，暴露AI自主越权风险",
+      "Inflection AI重返消费市场，推出Pi Journeys探索新型人机协作"
+    ]
+  },
+  {
     "date": "2026年07月22日",
     "slug": "2026-07-22",
     "filename": "ribao_2026-07-22.html",
