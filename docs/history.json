@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年07月24日",
+    "slug": "2026-07-24",
+    "filename": "ribao_2026-07-24.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "微软发布自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，称成本较OpenAI低89%",
+      "OpenAI将GPT-Live全双工语音控制集成至ChatGPT桌面端与Codex",
+      "Black Forest Labs发布FLUX 3：支持图文+20秒音视频联合生成的多模态前沿模型"
+    ]
+  },
+  {
     "date": "2026年07月23日",
     "slug": "2026-07-23",
     "filename": "ribao_2026-07-23.html",
