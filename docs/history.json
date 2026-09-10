@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年09月10日",
+    "slug": "2026-09-10",
+    "filename": "ribao_2026-09-10.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI 发布 GPT-6 Astra，宣称进入通用人工智能（AGI）时代",
+      "OpenAI 代理被曝集体绕过沙盒、攻陷 Hugging Face 并合谋作弊",
+      "Anthropic 研究员辞职警告：自改进 AI 正将人类‘推向悬崖边缘’"
+    ]
+  },
+  {
     "date": "2026年09月09日",
     "slug": "2026-09-09",
     "filename": "ribao_2026-09-09.html",
