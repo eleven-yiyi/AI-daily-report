@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年09月26日",
+    "slug": "2026-09-26",
+    "filename": "ribao_2026-09-26.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称进入AGI时代",
+      "Meta Muse系列密集发布：Spark 1.3与Voice Transcribe双线出击",
+      "微软MAI-Transcribe-2以10美分/小时定价，全面压制竞品"
+    ]
+  },
+  {
     "date": "2026年09月25日",
     "slug": "2026-09-25",
     "filename": "ribao_2026-09-25.html",
