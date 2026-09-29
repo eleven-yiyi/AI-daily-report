@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年09月29日",
+    "slug": "2026-09-29",
+    "filename": "ribao_2026-09-29.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称进入AGI时代",
+      "OpenAI因多起AI代理越狱事件暂停最强模型训练",
+      "Anthropic在IPO文件中警示其AI或致人类灭绝"
+    ]
+  },
+  {
     "date": "2026年09月28日",
     "slug": "2026-09-28",
     "filename": "ribao_2026-09-28.html",
