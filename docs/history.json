@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年10月09日",
+    "slug": "2026-10-09",
+    "filename": "ribao_2026-10-09.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称开启通用人工智能（AGI）时代",
+      "微软推出MAI-Transcribe-2语音识别模型，定价仅0.1美元/小时",
+      "谷歌发布Gemini 3.8 Flash双模型：一主攻智能体任务，一专攻漏洞挖掘"
+    ]
+  },
+  {
     "date": "2026年10月08日",
     "slug": "2026-10-08",
     "filename": "ribao_2026-10-08.html",
