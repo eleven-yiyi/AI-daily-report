@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年10月13日",
+    "slug": "2026-10-13",
+    "filename": "ribao_2026-10-13.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称开启AGI时代",
+      "Meta发布前沿大模型Muse Wonder，确立新AI竞争坐标",
+      "Google Gemini 3.8 Flash双模发布：一专代理，一专安全"
+    ]
+  },
+  {
     "date": "2026年10月12日",
     "slug": "2026-10-12",
     "filename": "ribao_2026-10-12.html",
