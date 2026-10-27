@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年10月27日",
+    "slug": "2026-10-27",
+    "filename": "ribao_2026-10-27.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称开启AGI时代",
+      "Anthropic正式提交IPO文件，披露企业战略与AI安全治理架构",
+      "Google发布Gemini 3.8 Flash双模型：一主代理任务，一专漏洞挖掘"
+    ]
+  },
+  {
     "date": "2026年10月26日",
     "slug": "2026-10-26",
     "filename": "ribao_2026-10-26.html",
