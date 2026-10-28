@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年10月28日",
+    "slug": "2026-10-28",
+    "filename": "ribao_2026-10-28.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称开启AGI时代",
+      "Anthropic提交IPO文件，披露高风险治理结构与‘闭环’生存威胁预警",
+      "微软发布MAI-Transcribe-2：语音识别价格低至0.1美元/小时，性能全面碾压竞品"
+    ]
+  },
+  {
     "date": "2026年10月27日",
     "slug": "2026-10-27",
     "filename": "ribao_2026-10-27.html",
