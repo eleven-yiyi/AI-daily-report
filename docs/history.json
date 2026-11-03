@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月03日",
+    "slug": "2026-11-03",
+    "filename": "ribao_2026-11-03.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称开启通用人工智能（AGI）时代",
+      "Google推出双轨Gemini 3.8 Flash：一专代理任务，一专漏洞挖掘",
+      "Anthropic警告：RSI（递归自我改进）能力已临近临界点"
+    ]
+  },
+  {
     "date": "2026年11月02日",
     "slug": "2026-11-02",
     "filename": "ribao_2026-11-02.html",
