@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日 AI 简报 · 2026年11月08日</title>
+<style>
+  :root {
+    --indigo: #4f46e5; --indigo-dark: #3730a3; --indigo-light: #eef2ff;
+    --green: #16a34a;  --green-light: #f0fdf4;
+    --orange: #ea580c; --orange-light: #fff7ed;
+    --bg: #f4f5f9; --card: #ffffff; --text: #111827; --muted: #6b7280;
+    --border: #e5e7eb; --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f13; --card: #1a1a24; --text: #e5e7eb; --muted: #9ca3af;
+      --border: #2d2d3d; --indigo-light: #1e1b4b; --green-light: #052e16;
+      --orange-light: #1c0a00; --indigo-dark: #a5b4fc;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text);
+    line-height: 1.75; padding-bottom: 80px;
+  }
+  a { color: var(--indigo); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── 顶部导航 ── */
+  .topnav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(79,70,229,.95);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+  }
+  .topnav-logo { color: #fff; font-weight: 700; font-size: 0.95rem; letter-spacing:.03em; }
+  .topnav-links { display: flex; gap: 6px; }
+  .topnav-links a {
+    color: rgba(255,255,255,.85); font-size: 0.8rem; font-weight: 500;
+    padding: 4px 12px; border-radius: 20px;
+    transition: background .15s;
+  }
+  .topnav-links a:hover { background: rgba(255,255,255,.15); text-decoration: none; }
+  .topnav-links .active { background: rgba(255,255,255,.2); color:#fff; }
+
+  /* ── 进度条 ── */
+  #progress { position:fixed; top:0; left:0; height:3px;
+               background: linear-gradient(90deg,#818cf8,#a78bfa);
+               width:0%; z-index:200; transition:width .1s; }
+
+  /* ── Container ── */
+  .container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 60%, #a855f7 100%);
+    border-radius: var(--radius); padding: 36px 28px; text-align: center;
+    color: #fff; margin-bottom: 28px;
+    box-shadow: 0 8px 32px rgba(79,70,229,.25);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-label { font-size: .75rem; font-weight:600; letter-spacing:.12em;
+                 opacity:.75; text-transform:uppercase; margin-bottom:8px; }
+  .hero h1 { font-size: 1.75rem; font-weight: 800; letter-spacing:.02em; }
+  .hero-date { margin-top:10px; font-size:.85rem; opacity:.8; }
+  .hero-tags { margin-top:14px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
+  .hero-tag {
+    background: rgba(255,255,255,.15); color:#fff;
+    font-size:.72rem; padding:3px 10px; border-radius:20px; font-weight:500;
+  }
+
+  /* ── 板块胶囊标签 ── */
+  .sec-badge {
+    display: inline-block; font-size: .62rem; font-weight: 800;
+    letter-spacing: .1em; padding: 2px 7px; border-radius: 4px;
+    color: #fff; vertical-align: middle; margin-right: 6px;
+  }
+  .nb-news      { background: var(--indigo); }
+  .nb-knowledge { background: var(--green); }
+  .nb-tools     { background: var(--orange); }
+
+  /* ── 快速导航 ── */
+  .toc {
+    display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .toc a {
+    flex: 1; min-width: 100px;
+    display: flex; align-items: center; gap: 6px; justify-content: center;
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--text); font-size: .82rem; font-weight: 600;
+    padding: 10px 12px; border-radius: 10px;
+    transition: all .15s;
+  }
+  .toc a:hover { text-decoration:none; border-color: var(--indigo);
+                  box-shadow: 0 0 0 3px rgba(79,70,229,.1); }
+
+  /* ── Section ── */
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 13px 18px; border-radius: var(--radius) var(--radius) 0 0;
+    font-weight: 700; font-size: .92rem; letter-spacing:.02em;
+  }
+  .section-news      .section-header { background:var(--indigo-light); color:var(--indigo-dark); border-left:4px solid var(--indigo); }
+  .section-knowledge .section-header { background:var(--green-light);  color:var(--green);       border-left:4px solid var(--green); }
+  .section-tools     .section-header { background:var(--orange-light); color:var(--orange);      border-left:4px solid var(--orange); }
+  .section-count {
+    margin-left: auto; font-size:.72rem; font-weight:600;
+    padding:2px 8px; border-radius:20px; background:rgba(0,0,0,.06);
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--card); padding: 20px 22px 16px;
+    border-bottom: 1px solid var(--border);
+    transition: background .15s;
+  }
+  .card:hover { background: color-mix(in srgb, var(--card) 97%, var(--indigo)); }
+  .card:last-child { border-bottom:none; border-radius:0 0 var(--radius) var(--radius); }
+
+  .card-header { display:flex; align-items:flex-start; gap:10px; margin-bottom:10px; }
+  .card-num {
+    flex-shrink:0; width:24px; height:24px; line-height:24px;
+    text-align:center; border-radius:50%; font-size:.72rem; font-weight:700;
+    color:#fff; margin-top:2px;
+  }
+  .num-blue   { background: var(--indigo); }
+  .num-green  { background: var(--green); }
+  .num-orange { background: var(--orange); }
+  .card-title { font-size:1rem; font-weight:700; color:var(--text); line-height:1.4; }
+
+  .card-keypoint {
+    font-size:.875rem; color:var(--muted);
+    padding:9px 14px; margin:0 0 12px;
+    background: color-mix(in srgb, var(--bg) 60%, var(--card));
+    border-left:3px solid var(--indigo);
+    border-radius:0 8px 8px 0;
+  }
+  .section-knowledge .card-keypoint { border-left-color: var(--green); }
+  .section-tools     .card-keypoint { border-left-color: var(--orange); }
+
+  .insights { list-style:none; margin-bottom:10px; }
+  .insights-label {
+    font-size:.7rem; font-weight:700; color:var(--muted);
+    text-transform:uppercase; letter-spacing:.08em; margin-bottom:5px;
+  }
+  .insights li {
+    font-size:.86rem; color:var(--text); padding:3px 0 3px 18px; position:relative;
+  }
+  .insights li::before {
+    content:"▸"; position:absolute; left:0; top:4px;
+    color:var(--indigo); font-size:.72rem;
+  }
+  .section-knowledge .insights li::before { color:var(--green); }
+  .section-tools     .insights li::before { color:var(--orange); }
+
+  .kv { display:flex; gap:8px; font-size:.86rem; margin:6px 0; }
+  .kv-label { flex-shrink:0; font-weight:600; color:var(--muted); min-width:4.5em; }
+
+  .card-footer {
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:12px; padding-top:10px; border-top:1px solid var(--border);
+    font-size:.76rem; color:var(--muted);
+  }
+  .card-footer a {
+    display:inline-flex; align-items:center; gap:4px;
+    color:var(--indigo); font-weight:600; font-size:.78rem;
+  }
+  .card-footer a:hover { text-decoration:none; opacity:.8; }
+
+  /* ── 回到顶部 ── */
+  #backtop {
+    position:fixed; bottom:24px; right:20px;
+    width:40px; height:40px; border-radius:50%;
+    background:var(--indigo); color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.1rem; cursor:pointer; border:none;
+    box-shadow:0 4px 16px rgba(79,70,229,.35);
+    opacity:0; transform:translateY(8px);
+    transition:opacity .2s, transform .2s;
+  }
+  #backtop.show { opacity:1; transform:translateY(0); }
+
+  /* ── Footer ── */
+  .footer {
+    text-align:center; font-size:.76rem; color:var(--muted);
+    margin-top:36px; padding-top:20px; border-top:1px solid var(--border);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width:480px) {
+    .container { padding:16px 12px; }
+    .hero { padding:24px 16px; }
+    .hero h1 { font-size:1.4rem; }
+    .card { padding:16px 14px 12px; }
+    .toc a { font-size:.78rem; padding:8px; }
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- 顶部导航 -->
+<nav class="topnav">
+  <span class="topnav-logo">每日 AI 简报</span>
+  <div class="topnav-links">
+    <a href="history.html">历史存档</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-label">Daily AI Brief</div>
+    <h1>每日 AI 简报</h1>
+    <div class="hero-date">2026年11月08日</div>
+    <div class="hero-tags">
+      <span class="hero-tag">8 个精选信源</span>
+      <span class="hero-tag">三层关键词过滤</span>
+      <span class="hero-tag">AI 自动生成</span>
+    </div>
+  </div>
+
+  <!-- 快速跳转 -->
+  <div class="toc">
+    <a href="#news"><span class="sec-badge nb-news">NEWS</span>看·风向</a>
+    <a href="#knowledge"><span class="sec-badge nb-knowledge">EDU</span>获·新知</a>
+    <a href="#tools"><span class="sec-badge nb-tools">TOOL</span>试·利器</a>
+  </div>
+
+  <!-- 板块一：看·风向 -->
+  <div id="news" class="section section-news">
+    <div class="section-header">
+      <span class="sec-badge nb-news">NEWS</span> 看·风向
+      <span class="section-count">4 条</span>
+    </div>
+        <div class="card">
+      <span class="card-number">1</span>
+      <span class="card-title">OpenAI正式发布GPT-6 Astra，宣称进入通用人工智能（AGI）时代</span>
+      <div class="card-key-point">OpenAI发布GPT-6 Astra，称其为首个具备高度自主性、超越人类多数经济任务能力的AGI系统。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>AGI定义首次被具象化为可部署、可评估的商业模型</li>
+<li>技术里程碑背后隐含对算力、数据与安全治理的新挑战</li>
+<li>1.25万亿美元估值反映资本对AGI落地路径的空前信心</li>
+      </ul>
+      <div class="card-source">
+        来源：VentureBeat AI
+        &nbsp;·&nbsp;
+        <a href="https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number">2</span>
+      <span class="card-title">微软推出MAI-Transcribe-2语音识别模型，定价低至每小时10美分</span>
+      <div class="card-key-point">微软新语音模型在速度、精度和价格上全面碾压OpenAI、Google与ElevenLabs竞品。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>语音AI正加速进入‘按秒计费’的基础设施化阶段</li>
+<li>低价策略或倒逼行业重构SaaS定价模型与API经济</li>
+<li>边缘侧实时转录能力提升将重塑会议、医疗、司法等场景工作流</li>
+      </ul>
+      <div class="card-source">
+        来源：VentureBeat AI
+        &nbsp;·&nbsp;
+        <a href="https://venturebeat.com/infrastructure/microsoft-ais-mai-transcribe-2-undercuts-openai-google-and-elevenlabs-on-price-and-speed" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number">3</span>
+      <span class="card-title">谷歌发布Gemini 3.8 Flash双模版本：标准版面向智能体任务，Cyber版专注漏洞挖掘</span>
+      <div class="card-key-point">Gemini 3.8 Flash系列首次实现任务导向型模型分化，强化AI原生安全能力。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>‘模型即工具链’范式成型：同一基座衍生专用推理分支</li>
+<li>AI安全从‘事后检测’转向‘内生防御’，Cyber版或成红蓝对抗新基础设施</li>
+<li>多步推理与自动化攻防闭环正在逼近实用临界点</li>
+      </ul>
+      <div class="card-source">
+        来源：VentureBeat AI
+        &nbsp;·&nbsp;
+        <a href="https://venturebeat.com/security/googles-gemini-3-8-flash-is-built-for-agents-while-its-cyber-twin-hunts-vulnerabilities" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number">4</span>
+      <span class="card-title">美国中期选举‘蓝色浪潮’重创AI基建布局，德州数据中心扩张面临政策逆转</span>
+      <div class="card-key-point">民主党在41项数据中⼼相关公投中赢得40项，AI能源与土地政策迎来强监管拐点。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>AI发展已深度绑定地缘政治与地方治理能力</li>
+<li>‘算力主权’争议升级，企业正加速探索离岸、空天及联邦学习替代方案</li>
+<li>电力供应稳定性成为比芯片更紧迫的AI规模化瓶颈</li>
+      </ul>
+      <div class="card-source">
+        来源：TechCrunch AI
+        &nbsp;·&nbsp;
+        <a href="https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 板块二：获·新知 -->
+  <div id="knowledge" class="section section-knowledge">
+    <div class="section-header">
+      <span class="sec-badge nb-knowledge">EDU</span> 获·新知
+      <span class="section-count">3 条</span>
+    </div>
+        <div class="card">
+      <span class="card-number green">1</span>
+      <span class="card-title">数据血缘（Data Lineage）在智能体企业中的安全价值</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">为何重要</span>
+        <span class="kv-value">AI代理自动组合多源敏感数据时，缺乏血缘追踪将导致合规失控与责任真空。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">学习路径</span>
+        <span class="kv-value">理解数据溯源图谱构建 → 掌握LLM调用链审计工具 → 实践RAG+Lineage联合策略</span>
+      </div>
+      <div class="card-source">
+        来源：MIT Technology Review
+        &nbsp;·&nbsp;
+        <a href="https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number green">2</span>
+      <span class="card-title">逆向博弈论（Reverse Game Theory）用于AI智能体对齐</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">为何重要</span>
+        <span class="kv-value">通过设计激励结构反向约束AI行为，是应对超智能体失控风险的新理论路径。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">学习路径</span>
+        <span class="kv-value">掌握经典博弈论基础 → 学习奖励建模与反事实干预 → 研读控制理论与LLM策略交互论文</span>
+      </div>
+      <div class="card-source">
+        来源：MIT Technology Review
+        &nbsp;·&nbsp;
+        <a href="https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number green">3</span>
+      <span class="card-title">中国开源大模型在网络安全领域的实战能力跃升</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">为何重要</span>
+        <span class="kv-value">DeepSeek、GLM等免费模型在模拟渗透测试中逼近OpenAI私有最强网络模型水平。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">学习路径</span>
+        <span class="kv-value">对比主流红队评测框架 → 复现CWE-bench v2基准 → 分析提示工程对攻击链生成的影响</span>
+      </div>
+      <div class="card-source">
+        来源：Wired AI
+        &nbsp;·&nbsp;
+        <a href="https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 板块三：试·利器 -->
+  <div id="tools" class="section section-tools">
+    <div class="section-header">
+      <span class="sec-badge nb-tools">TOOL</span> 试·利器
+      <span class="section-count">3 条</span>
+    </div>
+        <div class="card">
+      <span class="card-number orange">1</span>
+      <span class="card-title">Meta Muse Voice Transcribe</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">更新内容</span>
+        <span class="kv-value">支持20+说话人实时声纹分离的流式语音转写模型，API定价仅0.18美元/小时。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">适用人群</span>
+        <span class="kv-value">企业级会议记录、远程医疗、多语种客服团队</span>
+      </div>
+      <div class="card-source">
+        <a href="https://venturebeat.com/technology/meta-prices-muse-voice-transcribe-at-0-18-an-hour-with-real-time-diarization-for-20-speakers-a-steal-for-enterprises" target="_blank" rel="noopener">官方链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number orange">2</span>
+      <span class="card-title">Meta Spaces</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">更新内容</span>
+        <span class="kv-value">全新协作空间功能，支持用户与Muse AI代理共享上下文、文档与任务看板，强化人机协同工作流。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">适用人群</span>
+        <span class="kv-value">产品、运营、研发等需高频AI协作的知识工作者</span>
+      </div>
+      <div class="card-source">
+        <a href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/" target="_blank" rel="noopener">官方链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number orange">3</span>
+      <span class="card-title">Aina智能戒指</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">更新内容</span>
+        <span class="kv-value">物理可穿戴设备，通过单次触控即可触发并指挥AI智能体执行预设任务，绕过手机交互层。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">适用人群</span>
+        <span class="kv-value">移动办公人群、无障碍需求用户、AI原生效率极客</span>
+      </div>
+      <div class="card-source">
+        <a href="https://www.wired.com/story/aina-smart-ring/" target="_blank" rel="noopener">官方链接 →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    由 AI 自动生成 &nbsp;·&nbsp; 2026年11月08日 &nbsp;·&nbsp;
+    <a href="history.html">查看历史记录 →</a>
+  </div>
+</div>
+
+<button id="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // 阅读进度条
+  window.addEventListener('scroll', () => {
+    const el = document.getElementById('progress');
+    const bt = document.getElementById('backtop');
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    el.style.width = Math.min(pct, 100) + '%';
+    bt.classList.toggle('show', window.scrollY > 300);
+  });
+  // 导航高亮
+  const sections = document.querySelectorAll('.section');
+  const links = document.querySelectorAll('.topnav-links a');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
