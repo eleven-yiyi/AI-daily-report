@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日 AI 简报 · 2026年11月12日</title>
+<style>
+  :root {
+    --indigo: #4f46e5; --indigo-dark: #3730a3; --indigo-light: #eef2ff;
+    --green: #16a34a;  --green-light: #f0fdf4;
+    --orange: #ea580c; --orange-light: #fff7ed;
+    --bg: #f4f5f9; --card: #ffffff; --text: #111827; --muted: #6b7280;
+    --border: #e5e7eb; --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f13; --card: #1a1a24; --text: #e5e7eb; --muted: #9ca3af;
+      --border: #2d2d3d; --indigo-light: #1e1b4b; --green-light: #052e16;
+      --orange-light: #1c0a00; --indigo-dark: #a5b4fc;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text);
+    line-height: 1.75; padding-bottom: 80px;
+  }
+  a { color: var(--indigo); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── 顶部导航 ── */
+  .topnav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(79,70,229,.95);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+  }
+  .topnav-logo { color: #fff; font-weight: 700; font-size: 0.95rem; letter-spacing:.03em; }
+  .topnav-links { display: flex; gap: 6px; }
+  .topnav-links a {
+    color: rgba(255,255,255,.85); font-size: 0.8rem; font-weight: 500;
+    padding: 4px 12px; border-radius: 20px;
+    transition: background .15s;
+  }
+  .topnav-links a:hover { background: rgba(255,255,255,.15); text-decoration: none; }
+  .topnav-links .active { background: rgba(255,255,255,.2); color:#fff; }
+
+  /* ── 进度条 ── */
+  #progress { position:fixed; top:0; left:0; height:3px;
+               background: linear-gradient(90deg,#818cf8,#a78bfa);
+               width:0%; z-index:200; transition:width .1s; }
+
+  /* ── Container ── */
+  .container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 60%, #a855f7 100%);
+    border-radius: var(--radius); padding: 36px 28px; text-align: center;
+    color: #fff; margin-bottom: 28px;
+    box-shadow: 0 8px 32px rgba(79,70,229,.25);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-label { font-size: .75rem; font-weight:600; letter-spacing:.12em;
+                 opacity:.75; text-transform:uppercase; margin-bottom:8px; }
+  .hero h1 { font-size: 1.75rem; font-weight: 800; letter-spacing:.02em; }
+  .hero-date { margin-top:10px; font-size:.85rem; opacity:.8; }
+  .hero-tags { margin-top:14px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
+  .hero-tag {
+    background: rgba(255,255,255,.15); color:#fff;
+    font-size:.72rem; padding:3px 10px; border-radius:20px; font-weight:500;
+  }
+
+  /* ── 板块胶囊标签 ── */
+  .sec-badge {
+    display: inline-block; font-size: .62rem; font-weight: 800;
+    letter-spacing: .1em; padding: 2px 7px; border-radius: 4px;
+    color: #fff; vertical-align: middle; margin-right: 6px;
+  }
+  .nb-news      { background: var(--indigo); }
+  .nb-knowledge { background: var(--green); }
+  .nb-tools     { background: var(--orange); }
+
+  /* ── 快速导航 ── */
+  .toc {
+    display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .toc a {
+    flex: 1; min-width: 100px;
+    display: flex; align-items: center; gap: 6px; justify-content: center;
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--text); font-size: .82rem; font-weight: 600;
+    padding: 10px 12px; border-radius: 10px;
+    transition: all .15s;
+  }
+  .toc a:hover { text-decoration:none; border-color: var(--indigo);
+                  box-shadow: 0 0 0 3px rgba(79,70,229,.1); }
+
+  /* ── Section ── */
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 13px 18px; border-radius: var(--radius) var(--radius) 0 0;
+    font-weight: 700; font-size: .92rem; letter-spacing:.02em;
+  }
+  .section-news      .section-header { background:var(--indigo-light); color:var(--indigo-dark); border-left:4px solid var(--indigo); }
+  .section-knowledge .section-header { background:var(--green-light);  color:var(--green);       border-left:4px solid var(--green); }
+  .section-tools     .section-header { background:var(--orange-light); color:var(--orange);      border-left:4px solid var(--orange); }
+  .section-count {
+    margin-left: auto; font-size:.72rem; font-weight:600;
+    padding:2px 8px; border-radius:20px; background:rgba(0,0,0,.06);
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--card); padding: 20px 22px 16px;
+    border-bottom: 1px solid var(--border);
+    transition: background .15s;
+  }
+  .card:hover { background: color-mix(in srgb, var(--card) 97%, var(--indigo)); }
+  .card:last-child { border-bottom:none; border-radius:0 0 var(--radius) var(--radius); }
+
+  .card-header { display:flex; align-items:flex-start; gap:10px; margin-bottom:10px; }
+  .card-num {
+    flex-shrink:0; width:24px; height:24px; line-height:24px;
+    text-align:center; border-radius:50%; font-size:.72rem; font-weight:700;
+    color:#fff; margin-top:2px;
+  }
+  .num-blue   { background: var(--indigo); }
+  .num-green  { background: var(--green); }
+  .num-orange { background: var(--orange); }
+  .card-title { font-size:1rem; font-weight:700; color:var(--text); line-height:1.4; }
+
+  .card-keypoint {
+    font-size:.875rem; color:var(--muted);
+    padding:9px 14px; margin:0 0 12px;
+    background: color-mix(in srgb, var(--bg) 60%, var(--card));
+    border-left:3px solid var(--indigo);
+    border-radius:0 8px 8px 0;
+  }
+  .section-knowledge .card-keypoint { border-left-color: var(--green); }
+  .section-tools     .card-keypoint { border-left-color: var(--orange); }
+
+  .insights { list-style:none; margin-bottom:10px; }
+  .insights-label {
+    font-size:.7rem; font-weight:700; color:var(--muted);
+    text-transform:uppercase; letter-spacing:.08em; margin-bottom:5px;
+  }
+  .insights li {
+    font-size:.86rem; color:var(--text); padding:3px 0 3px 18px; position:relative;
+  }
+  .insights li::before {
+    content:"▸"; position:absolute; left:0; top:4px;
+    color:var(--indigo); font-size:.72rem;
+  }
+  .section-knowledge .insights li::before { color:var(--green); }
+  .section-tools     .insights li::before { color:var(--orange); }
+
+  .kv { display:flex; gap:8px; font-size:.86rem; margin:6px 0; }
+  .kv-label { flex-shrink:0; font-weight:600; color:var(--muted); min-width:4.5em; }
+
+  .card-footer {
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:12px; padding-top:10px; border-top:1px solid var(--border);
+    font-size:.76rem; color:var(--muted);
+  }
+  .card-footer a {
+    display:inline-flex; align-items:center; gap:4px;
+    color:var(--indigo); font-weight:600; font-size:.78rem;
+  }
+  .card-footer a:hover { text-decoration:none; opacity:.8; }
+
+  /* ── 回到顶部 ── */
+  #backtop {
+    position:fixed; bottom:24px; right:20px;
+    width:40px; height:40px; border-radius:50%;
+    background:var(--indigo); color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.1rem; cursor:pointer; border:none;
+    box-shadow:0 4px 16px rgba(79,70,229,.35);
+    opacity:0; transform:translateY(8px);
+    transition:opacity .2s, transform .2s;
+  }
+  #backtop.show { opacity:1; transform:translateY(0); }
+
+  /* ── Footer ── */
+  .footer {
+    text-align:center; font-size:.76rem; color:var(--muted);
+    margin-top:36px; padding-top:20px; border-top:1px solid var(--border);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width:480px) {
+    .container { padding:16px 12px; }
+    .hero { padding:24px 16px; }
+    .hero h1 { font-size:1.4rem; }
+    .card { padding:16px 14px 12px; }
+    .toc a { font-size:.78rem; padding:8px; }
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- 顶部导航 -->
+<nav class="topnav">
+  <span class="topnav-logo">每日 AI 简报</span>
+  <div class="topnav-links">
+    <a href="history.html">历史存档</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-label">Daily AI Brief</div>
+    <h1>每日 AI 简报</h1>
+    <div class="hero-date">2026年11月12日</div>
+    <div class="hero-tags">
+      <span class="hero-tag">8 个精选信源</span>
+      <span class="hero-tag">三层关键词过滤</span>
+      <span class="hero-tag">AI 自动生成</span>
+    </div>
+  </div>
+
+  <!-- 快速跳转 -->
+  <div class="toc">
+    <a href="#news"><span class="sec-badge nb-news">NEWS</span>看·风向</a>
+    <a href="#knowledge"><span class="sec-badge nb-knowledge">EDU</span>获·新知</a>
+    <a href="#tools"><span class="sec-badge nb-tools">TOOL</span>试·利器</a>
+  </div>
+
+  <!-- 板块一：看·风向 -->
+  <div id="news" class="section section-news">
+    <div class="section-header">
+      <span class="sec-badge nb-news">NEWS</span> 看·风向
+      <span class="section-count">4 条</span>
+    </div>
+        <div class="card">
+      <span class="card-number">1</span>
+      <span class="card-title">OpenAI正式发布GPT-6 Astra，宣称进入通用人工智能（AGI）时代</span>
+      <div class="card-key-point">OpenAI发布GPT-6 Astra，称其为首个具备经济领域全面超越人类能力的AGI系统。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>标志着AI从专用模型向自主、泛化智能体的关键跃迁</li>
+<li>引发对AGI定义、评估标准与安全治理框架的全球重审</li>
+<li>商业化路径尚不清晰，但已推动算力、数据、监管三重竞赛升级</li>
+      </ul>
+      <div class="card-source">
+        来源：VentureBeat AI
+        &nbsp;·&nbsp;
+        <a href="https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number">2</span>
+      <span class="card-title">微软推出MAI-Transcribe-2语音识别模型，定价仅0.1美元/小时</span>
+      <div class="card-key-point">微软以极低价和高性能切入语音转写市场，直击OpenAI、Google与ElevenLabs核心业务。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>基础设施层价格战白热化，API成本正逼近‘按字节计费’临界点</li>
+<li>实时性+准确性+低成本三角平衡首次被大规模商用验证</li>
+<li>或加速企业级会议纪要、医疗听录、司法笔录等场景AI原生重构</li>
+      </ul>
+      <div class="card-source">
+        来源：VentureBeat AI
+        &nbsp;·&nbsp;
+        <a href="https://venturebeat.com/infrastructure/microsoft-ais-mai-transcribe-2-undercuts-openai-google-and-elevenlabs-on-price-and-speed" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number">3</span>
+      <span class="card-title">谷歌发布Gemini 3.8 Flash双模型：一主代理任务，一专漏洞狩猎</span>
+      <div class="card-key-point">Gemini 3.8 Flash分‘工作马’与‘Cyber’双轨，强化AI在软件开发与网络安全中的工程化落地。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>Agent模型开始区分任务类型，走向专业化分工而非单一通用体</li>
+<li>AI原生安全能力从概念验证迈向生产级部署，威胁检测延迟大幅压缩</li>
+<li>‘推理即服务’范式成型，开发者可按需调用特定能力子模型</li>
+      </ul>
+      <div class="card-source">
+        来源：VentureBeat AI
+        &nbsp;·&nbsp;
+        <a href="https://venturebeat.com/security/googles-gemini-3-8-flash-is-built-for-agents-while-its-cyber-twin-hunts-vulnerabilities" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number">4</span>
+      <span class="card-title">OpenAI季度营收首破100亿美元，同比激增近50%</span>
+      <div class="card-key-point">OpenAI单季营收达100亿美元，印证大模型商业化已跨越临界点。</div>
+      <div class="insights-label">核心观点</div>
+      <ul class="insights">
+        <li>B2B API收入成主力，企业客户正快速替代早期消费级订阅模式</li>
+<li>高毛利模型即服务（MaaS）正在重塑AI公司估值逻辑</li>
+<li>营收爆发伴随监管压力同步上升，合规投入成新成本中心</li>
+      </ul>
+      <div class="card-source">
+        来源：TechCrunch AI
+        &nbsp;·&nbsp;
+        <a href="https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 板块二：获·新知 -->
+  <div id="knowledge" class="section section-knowledge">
+    <div class="section-header">
+      <span class="sec-badge nb-knowledge">EDU</span> 获·新知
+      <span class="section-count">3 条</span>
+    </div>
+        <div class="card">
+      <span class="card-number green">1</span>
+      <span class="card-title">Token Pooling-Aware Training</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">为何重要</span>
+        <span class="kv-value">提升多向量嵌入模型在长文本检索与语义对齐中的精度与效率。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">学习路径</span>
+        <span class="kv-value">理解传统Pooling缺陷→掌握Token-level注意力机制→实践Hugging Face最新训练脚本</span>
+      </div>
+      <div class="card-source">
+        来源：Hugging Face Blog
+        &nbsp;·&nbsp;
+        <a href="https://huggingface.co/blog/token-pooling" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number green">2</span>
+      <span class="card-title">CWE-bench v2</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">为何重要</span>
+        <span class="kv-value">新一代代码漏洞基准测试集，覆盖更全、标注更准、透明度更高，推动AI代码安全评测标准化。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">学习路径</span>
+        <span class="kv-value">熟悉CWE分类体系→对比v1/v2差异→在本地复现漏洞检测评估流程</span>
+      </div>
+      <div class="card-source">
+        来源：Hugging Face Blog
+        &nbsp;·&nbsp;
+        <a href="https://huggingface.co/blog/cwe-bench" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number green">3</span>
+      <span class="card-title">AI Agent Coordination（如Autark工具原理）</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">为何重要</span>
+        <span class="kv-value">解决多智能体协作中的目标对齐、权限隔离与失败传播问题，是构建可信AI工作流的基础。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">学习路径</span>
+        <span class="kv-value">学习分布式Agent架构→分析Autark通信协议→动手搭建双Agent协同任务链</span>
+      </div>
+      <div class="card-source">
+        来源：The Register AI/ML
+        &nbsp;·&nbsp;
+        <a href="https://www.theregister.com/ai-and-ml/2026/11/10/14-year-old-creates-tool-for-ai-agents-to-band-together-like-a-team/5308841" target="_blank" rel="noopener">原文链接 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 板块三：试·利器 -->
+  <div id="tools" class="section section-tools">
+    <div class="section-header">
+      <span class="sec-badge nb-tools">TOOL</span> 试·利器
+      <span class="section-count">3 条</span>
+    </div>
+        <div class="card">
+      <span class="card-number orange">1</span>
+      <span class="card-title">Meta Muse Voice Transcribe</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">更新内容</span>
+        <span class="kv-value">支持20+说话人实时声纹分离与流式转录，API定价0.18美元/小时，含端点检测。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">适用人群</span>
+        <span class="kv-value">企业会议平台、远程医疗、多语种教育服务商</span>
+      </div>
+      <div class="card-source">
+        <a href="https://venturebeat.com/technology/meta-prices-muse-voice-transcribe-at-0-18-an-hour-with-real-time-diarization-for-20-speakers-a-steal-for-enterprises" target="_blank" rel="noopener">官方链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number orange">2</span>
+      <span class="card-title">Anthropic Claude Office套件（Sheets/Whiteboards/Data）</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">更新内容</span>
+        <span class="kv-value">新增结构化数据处理与可视化协作组件，向轻量级AI生产力套件演进。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">适用人群</span>
+        <span class="kv-value">产品、运营、咨询等非技术型知识工作者</span>
+      </div>
+      <div class="card-source">
+        <a href="https://www.theregister.com/software/2026/11/10/anthropic-tiptoes-into-ms-office-territory/5308988" target="_blank" rel="noopener">官方链接 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-number orange">3</span>
+      <span class="card-title">BotPsy：端侧亚十亿参数智能体语言模型</span>
+      <div class="kv-row" style="margin-top:10px">
+        <span class="kv-label">更新内容</span>
+        <span class="kv-value">轻量化Agentic LM可在手机/边缘设备本地运行，支持个性化任务规划与隐私优先交互。</span>
+      </div>
+      <div class="kv-row">
+        <span class="kv-label">适用人群</span>
+        <span class="kv-value">移动端AI应用开发者、隐私敏感型终端用户</span>
+      </div>
+      <div class="card-source">
+        <a href="https://huggingface.co/blog/qvac/botpsy" target="_blank" rel="noopener">官方链接 →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    由 AI 自动生成 &nbsp;·&nbsp; 2026年11月12日 &nbsp;·&nbsp;
+    <a href="history.html">查看历史记录 →</a>
+  </div>
+</div>
+
+<button id="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // 阅读进度条
+  window.addEventListener('scroll', () => {
+    const el = document.getElementById('progress');
+    const bt = document.getElementById('backtop');
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    el.style.width = Math.min(pct, 100) + '%';
+    bt.classList.toggle('show', window.scrollY > 300);
+  });
+  // 导航高亮
+  const sections = document.querySelectorAll('.section');
+  const links = document.querySelectorAll('.topnav-links a');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
