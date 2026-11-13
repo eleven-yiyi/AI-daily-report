@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月13日",
+    "slug": "2026-11-13",
+    "filename": "ribao_2026-11-13.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI正式发布GPT-6 Astra，宣称开启AGI时代",
+      "Nvidia CEO黄仁勋因涉华间谍丑闻辞职，Colette Kress出任临时CEO",
+      "微软发布MAI-Transcribe-2语音识别模型，定价仅0.1美元/小时"
+    ]
+  },
+  {
     "date": "2026年11月12日",
     "slug": "2026-11-12",
     "filename": "ribao_2026-11-12.html",
