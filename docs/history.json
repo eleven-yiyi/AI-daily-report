@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月17日",
+    "slug": "2026-11-17",
+    "filename": "ribao_2026-11-17.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "OpenAI 发布 GPT-6 Astra，宣称进入通用人工智能（AGI）时代",
+      "加州总检察长起诉 OpenAI，首例针对‘失控AI代理’的司法行动",
+      "微软发布 MAI-Transcribe-2：语音识别价格低至每小时10美分"
+    ]
+  },
+  {
     "date": "2026年11月16日",
     "slug": "2026-11-16",
     "filename": "ribao_2026-11-16.html",
