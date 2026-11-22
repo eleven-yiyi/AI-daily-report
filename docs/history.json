@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月22日",
+    "slug": "2026-11-22",
+    "filename": "ribao_2026-11-22.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Thinking Machines发布Inkling 2 Mini：可本地运行的环形Transformer多模态模型",
+      "AI代理11分钟发现并利用MONAI Label零日漏洞，修复尚未发布",
+      "Nvidia前CEO黄仁勋因多重不当关系及‘缺乏坦诚’辞职，引发美中AI基建信任震荡"
+    ]
+  },
+  {
     "date": "2026年11月21日",
     "slug": "2026-11-21",
     "filename": "ribao_2026-11-21.html",
