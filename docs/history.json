@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月24日",
+    "slug": "2026-11-24",
+    "filename": "ribao_2026-11-24.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "Z.ai发布GLM-5.4：基于Loop Transformer架构，28层循环执行实现‘小模型大能力’",
+      "NVIDIA紧急 reinstated Jensen Huang为CEO，六天内推翻此前‘无国家安全风险’否决决定",
+      "Anthropic推出Claude Ship：首个面向开发流程的AI代理代码审批工具"
+    ]
+  },
+  {
     "date": "2026年11月23日",
     "slug": "2026-11-23",
     "filename": "ribao_2026-11-23.html",
