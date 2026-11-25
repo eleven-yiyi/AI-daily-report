@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月25日",
+    "slug": "2026-11-25",
+    "filename": "ribao_2026-11-25.html",
+    "news_count": 5,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "CrowdStrike拟以439亿美元收购Zscaler，构建网络级AI‘一键关停’能力",
+      "NVIDIA董事会六天内逆转决定，Jensen Huang火速复任CEO",
+      "AWS发布Strands Decider v2：专攻‘单细节决定成败’的AI决策场景"
+    ]
+  },
+  {
     "date": "2026年11月24日",
     "slug": "2026-11-24",
     "filename": "ribao_2026-11-24.html",
