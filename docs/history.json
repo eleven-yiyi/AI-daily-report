@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月26日",
+    "slug": "2026-11-26",
+    "filename": "ribao_2026-11-26.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "CrowdStrike拟439亿美元收购Zscaler，打造跨网络与云的AI代理‘一键关停’能力",
+      "Anthropic推出MCP Skills公测：AI代理可通过标准协议调用企业级技能",
+      "New York州禁售AI聊天玩具五年，直指儿童情感发育与内容安全风险"
+    ]
+  },
+  {
     "date": "2026年11月25日",
     "slug": "2026-11-25",
     "filename": "ribao_2026-11-25.html",
