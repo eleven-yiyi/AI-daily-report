@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月27日",
+    "slug": "2026-11-27",
+    "filename": "ribao_2026-11-27.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "CrowdStrike拟收购Zscaler，打造全网AI代理‘一键关停’安全机制",
+      "Nvidia暂停向东南亚四国出货AI芯片，地缘管制持续加码",
+      "Anthropic推出MCP技能支持，Claude正式接入AI代理能力生态"
+    ]
+  },
+  {
     "date": "2026年11月26日",
     "slug": "2026-11-26",
     "filename": "ribao_2026-11-26.html",
