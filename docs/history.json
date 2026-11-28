@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026年11月28日",
+    "slug": "2026-11-28",
+    "filename": "ribao_2026-11-28.html",
+    "news_count": 4,
+    "knowledge_count": 3,
+    "tools_count": 3,
+    "headlines": [
+      "AI 解决黎曼假设，但人类数学家需数月理解其1700万行证明",
+      "CrowdStrike收购Zscaler，打造网络层AI代理‘一键关停’能力",
+      "Nvidia暂停向东南亚四国出货AI芯片，强化对华出口管制"
+    ]
+  },
+  {
     "date": "2026年11月27日",
     "slug": "2026-11-27",
     "filename": "ribao_2026-11-27.html",
